@@ -32,6 +32,8 @@ require (
 require (
 	github.com/anchore/go-struct-converter v0.0.0-20221118182256-c68fdcfa2092 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
+	github.com/vmware-tanzu/carvel-kapp-controller v0.46.1 // indirect
+	github.com/vmware-tanzu/carvel-vendir v0.33.1 // indirect
 )
 
 require (
