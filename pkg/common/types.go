@@ -26,6 +26,7 @@ import (
 	v1 "k8s.io/api/core/v1"
 	networkv1 "k8s.io/api/networking/v1"
 	policyv1 "k8s.io/api/policy/v1"
+	clusterv1 "sigs.k8s.io/cluster-api/api/v1beta1"
 )
 
 type IAnalyzer interface {
@@ -56,6 +57,7 @@ type PreAnalysis struct {
 	NetworkPolicy            networkv1.NetworkPolicy
 	Node                     v1.Node
 	CarvelApp                kcv1alpha1.App
+	CapiCluster              clusterv1.Cluster
 	// Integrations
 	TrivyVulnerabilityReport trivy.VulnerabilityReport
 }
